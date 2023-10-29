@@ -25,7 +25,7 @@ services:
     container_name: wg-easy
     image: weejewel/wg-easy
     environment:
-      - WG_HOST=REPLACE_ME_WITH_YOUR_PUBLIC_IP
+      - WG_HOST=2.29.110.86
       - PASSWORD=YOUR_ADMIN_PASSWORD
     volumes:
       - "./wireguard:/etc/wireguard"
@@ -53,7 +53,7 @@ services:
       - 127.0.0.1
       - 10.2.0.200 # Points to unbound
     environment:
-      TZ: "America/Los_Angeles"
+      TZ: "Europe/London"
       WEBPASSWORD: "" # Blank password - Can be whatever you want.
       ServerIP: 10.2.0.100 # Internal IP of pihole
       DNS1: 10.2.0.200 # Unbound IP
